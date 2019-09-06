@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000;
+    overflow: hidden;
+}
+
+.selections {
+    margin: -10px auto -10px auto;
+    position: relative;
+    display: flex;
+    transition: all .5s ease;
+    height: 100px;
+    align-items: center;
+
+}
+
+
+.blend {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    backface-visibility: hidden;
+}
+
+.corner {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    backface-visibility: hidden;
+}
+
+.erase {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    backface-visibility: hidden;
+}
+
+select {
+    width: 200px;
+    padding: 5px;
+    margin: 15px;
+    color: white;
+    outline: none;
+    background: rgba(255, 255, 255, .25);
+    backface-visibility: hidden;
+}
+
+option {
+    width: 200px;
+    padding: 5px;
+    margin: 15px;
+    color: white;
+    background: rgba(0, 0, 0, .75);
+}
+
+button {
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    margin: 15px;
+    color: white;
+    border: none;
+    background: rgba(255, 255, 255, .25);
+    outline: none;
+    backface-visibility: hidden;
+
+}
+
+button:hover {
+    background: rgba(255, 255, 255, .6);
+    cursor: pointer;
+}
+
+button:active {
+    background: rgba(255, 255, 255, .6);
+    cursor: pointer;
+    animation: moveUpDown .1s ease;
+}
+
+@keyframes moveUpDown {
+    50% {
+        transform: translateY(4px);
+    }
+
+}

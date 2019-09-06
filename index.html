@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML5 Canvas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="selections">
+        <div class="blend">
+            <select id="blendmode">
+                <option value="normal">normal</option>
+                <option value="difference">difference</option>
+                <option value="source-out">source-out</option>
+                <option value="copy">copy</option>
+                <option value="darken">darken</option>
+                <option value="multiply">multiply</option>
+                <option value="color-dodge">color-dodge</option>
+                <option value="color-burn">color-burn</option>
+                <option value="overlay">overlay</option>
+                <option value="screen">screen</option>
+                <option value="hard-light">hard-light</option>
+                <option value="soft-light">soft-light</option>
+                <option value="lighten">lighten</option>
+                <option value="exclusion">exclusion</option>
+                <option value="hue">hue</option>
+                <option value="saturation">saturation</option>
+                <option value="color">color</option>
+                <option value="luminosity">luminosity</option>
+                <option value="source-over">source-over</option>
+                <option value="destination-over">destination-over</option>
+                <option value="destination-atop">destination-atop</option>
+                <option value="lighter">lighter</option>
+                <option value="xor">xor</option>
+            </select>
+            <button type="button" onclick="changeMode()">Change Blend Mode</button>
+        </div>
+
+        <div class="corner">
+            <select id="roundness">
+                <option value="square">square</option>
+                <option value="butt">butt</option>
+                <option value="round">round</option>
+            </select>
+            <button type="button" onclick="changeCorner()">Change Line Cap
+            </button>
+        </div>
+        <div class="erase">
+            <button type="button" onclick="erase()">Erase</button>
+            <button type="button" onclick="eraseAll()">Erase All</button>
+        </div>
+    </div>
+
+    <canvas id="draw" width="1000" height="1000"></canvas>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
